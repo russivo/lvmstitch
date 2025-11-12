@@ -7,6 +7,10 @@ While this capability is not inherent inside the Civo system, it is possible to 
 
 Because it is up to the user what their automation tooling is like, we have left the triggering of the execution open to interpretation. Whatever triggers the creation and deletion of resources would execute the automation accordingly. The deletion and handling of the "resetting the clock" would also need to be handled by the automation; however, this is likely trivial to implement with any event/automation system capable of handling monitoring/timed execution.
 
+One last note is that if the user requires new VMs to have software installed on instantiation, this can be done with an initialisation script:
+
+`civo instance create --script <path to a script that will be uploaded to /usr/local/bin/civo-user-init-script on your instance, read/write/executable only by root and then will be executed at the end of the cloud initialization>`
+
 ## The scripts:
 
 ### provision_data_mount.sh
