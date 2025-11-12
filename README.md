@@ -74,9 +74,9 @@ Filesystem                   Size  Used Avail Use% Mounted on
 8. Expand the storage - first create new volumes and attach them to the VM:
 
 ```
-civo volume create data02
+civo volume create data02 --size-gb 50
 civo volume attach data02 test-vm
-civo volume create data03
+civo volume create data03 --size-gb 50
 civo volume attach data03 test-vm
 ```
 
