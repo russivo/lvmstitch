@@ -39,7 +39,7 @@ The script aborts if >1 LV is found or if anything goes wrong.
 
 1. Create initial VM
 
-`civo create instance test-vm --size g4s.small --diskimage ubuntu-noble --sshkey my-ssh-key --wait`
+`civo instance create test-vm --size g4s.small --diskimage ubuntu-noble --sshkey my-ssh-key --wait`
 
 2. Create 50GB volume:
 
