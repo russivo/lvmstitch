@@ -75,9 +75,9 @@ Filesystem                   Size  Used Avail Use% Mounted on
 
 ```
 civo volume create data02 --size-gb 50
-civo volume attach data02 test-vm
+civo volume attach data02 test-vm --wait
 civo volume create data03 --size-gb 50
-civo volume attach data03 test-vm
+civo volume attach data03 test-vm --wait
 ```
 
 9. Initialise and add the new volumes on the VM:
