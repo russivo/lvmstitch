@@ -102,7 +102,7 @@ This automatically detatches the volumes.
 
 12. Create a new, replacement VM:
 
-`civo create instance new-test-vm --size g4s.small --diskimage ubuntu-noble --sshkey my-ssh-key --wait`
+`civo instance create new-test-vm --size g4s.small --diskimage ubuntu-noble --sshkey my-ssh-key --wait`
 
 13. Reattach the existing volumes to the new VM:
 
