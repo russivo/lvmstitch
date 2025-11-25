@@ -107,14 +107,14 @@ This automatically detatches the volumes.
 13. Reattach the existing volumes to the new VM:
 
 ```
-civo volume attach data01 new-test-vm
-civo volume attach data02 new-test-vm
-civo volume attach data03 new-test-vm
+civo volume attach data01 new-test-vm --wait
+civo volume attach data02 new-test-vm --wait
+civo volume attach data03 new-test-vm --wait
 ```
 
 14. Find and recreate the logical volume on /data:
 
-`./provision_data_mount.sh civo <IP ADDRESS> ~/.ssh/id_rsa`
+`./provision_data_mount.sh civo <NEW VM IP ADDRESS> ~/.ssh/id_rsa`
 
 15. Check/use the storage (on the VM):
 
